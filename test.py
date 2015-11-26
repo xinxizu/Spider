@@ -12,6 +12,7 @@ def get_html(url):
 	html=response.read()
 	return html
 
+#获取图片
 def get_image(html):
 	pattern=r'src="(.+\.jpg)"'
 	image=re.compile(pattern)
